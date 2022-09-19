@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+/*-------NavBar--------*/
+#Nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    padding-left: 30px;
+    height: 60px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#Nav-bar ul li a:hover {
+    color: #007bff;
+}
+
+.navbar {
+    background: #fff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
