@@ -42,3 +42,34 @@
     font-weight: 600;
     font-size: 16px;
 }
+
+h1{
+    color: #4e03e1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+span {
+    width: 100px;
+    height: 5px;
+    background-color: #4e03e1;
+    display: block;
+    text-align: center;
+    margin: 15px auto
+}
+
+.fotoescola {
+    border: 2px solid blueviolet;
+    width: 50%;
+}
+
+h {
+    display: inline-block;
+    width: 80%;
+    color: black;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    user-select: none;
+    cursor: pointer;
+}
