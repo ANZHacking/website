@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AMOS MEUCCI</title>
+    <style>
+        body {
+            font-family: arial;
+            color: blueviolet;
+            text-align: center;
+        }
+        header {
+            color: gray;
+        }
+        header h {
+            margin-left: 20px;
+            margin-right: 20px;
+            user-select: none;
+            cursor: pointer;
+        }
+        header h:hover {
+            color: blueviolet;
+        }
+        hr {
+            width: 50%;
+        }
+        div:not(#inicio) {
+            display: none;
+        }
+        div img {
+            width: 80%;
+            border: 2px solid blueviolet;
+        }
+        div h {
+            display: inline-block;
+            width: 80%;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h at="inicio">Início</h>
+        <h at="contato">Contato</h>
+        <h at="sobre">Sobre nós</h>
+        <h at="equipe">Equipe</h>
+    </header>
+
+    <div id="inicio">
+        <br>
+        <h1>AMOS MEUCCI</h1>
+        <hr>
+        <img src="./fotodaescola.jpg">
+        <br>
+        <h>Amos Meucci foi criada no dia 13/06/1988. O nome de origem Italiana vem do segundo prefeito de Carapicuíba (Amós Meucci) que nasceu em 27 de outubro de 1913 na Laranjal Paulista (SP), morreu no dia 09 de abril de 1977 aos 63 anos em Barueri (SP), então em 1988 teve seu nome como homenagem na nossa escola.</h>
+    </div>
+
+    <div id="contato">
+        <br>
+        <h1>CONTATO</h1>
+        <hr>
+        <main> 
+            <!-- Taca aq dentro o script -->    
+        </main>
+    </div>
+
+    <div id="sobre">
+        <br>
+        <h1>SOBRE NÓS</h1>
+        <hr>
+        <br>
+        <h>Nesse ano a escola (Amos Meucci) resolveu fazer um projeto escolar/feira de profissões com os alunos, com isso a sala de T.i (Tecnologia da Informação) teve a ideia de usar o máximo de seu conhecimento, criando este site que vem com intuito de mostrar que hoje mesmo sem nem ter cursado você pode aprender e aplicar na área profissional, basta (você) ir atrás do que quer.</h>
+    </div>
+
+    <div id="equipe">
+        <br>
+        <h1>EQUIPE</h1>
+        <hr>
+    </div>
+
+    <script>
+        document.querySelectorAll("header h").forEach(item => item.addEventListener("click", () => {
+            console.log("Clicou em", item.innerText);
+            document.querySelectorAll("div").forEach(query => {
+                query.style.display = query.id != item.getAttribute("at") ? "none" : "block";
+            });
+        }));
+    </script>
+</body>
+</html>
